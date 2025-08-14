@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>AstroFact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        /* Sticky Navbar Styles */
+        .navbar {
+            transition: background-color 0.3s, backdrop-filter 0.3s;
+        }
+        .navbar.sticky {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .active {
+            background-color: #050517; /* Active link color */
+            color: white; /* Active link text color */
+        }
+
+        
+    </style>
+</head>
+<body class="bg-white text-black font-sans">
+      <header class="border-b border-gray-200 sticky top-0 z-50 bg-white/80 backdrop-blur-md transition-all shadow-sm">
+
+        <nav id="navbar" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center sm:justify-center py-6 relative space-x-8">
+                <!-- alt="Company logo, simple black and white icon" class="absolute left-4 top-1/2 -translate-y-1/2 sm:static sm:translate-y-0" height="40" src="https://storage.googleapis.com/a1aa/image/a5c819cb-8cdd-4076-c9e9-d9b79d97dcd6.jpg" width="40"/> 
+        
+                <img alt="Company logo" class="absolute left-4 top-12 -translate-y-1/2 sm:static sm:translate-y-0" height="40" src="astrofact_logo-removebg-preview.png" width="40"/>
+            -->
+                 <img alt="Company logo" class="absolute left-4 top-12 -translate-y-1/2 sm:static sm:translate-y-0" height="190" src="astrofact_logo-removebg-preview.png" width="190"/>
+                <div class="hidden sm:flex space-x-8">
+                <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#home">Home</a>
+                <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#decode_time">Decode Time</a>
+                <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#framework">Framework</a>
+                    <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#rare_knowledge">Rare Knowledge</a>
+                    <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#contact">Contact</a>
+                    <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#join">Join Us</a>
+                </div>
+                <button aria-label="Toggle menu" class="sm:hidden absolute right-4 text-black focus:outline-none" id="menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden sm:hidden flex flex-col space-y-4 pb-6 px-4" id="mobile-menu">
+                <a class="text-sm font-normal text-black whitespace-nowrap" href="#home">Home</a>
+                <a class="text-sm font-semibold bg-[#050517] text-white rounded-md px-4 py-2 whitespace-nowrap" href="#decode_time">Decode Time</a>
+                <a class="text-sm font-normal text-black whitespace-nowrap" href="#framework">Framework</a>
+                <a class="text-sm font-normal text-black whitespace-nowrap" href="#rare_knowledge">Rare Knowledge</a>
+                <a class="text-sm font-normal text-black whitespace-nowrap" href="#contact">Contact</a>
+                <a class="text-sm font-normal text-black whitespace-nowrap" href="#join">Join Us</a>
+            </div>
+        </nav>
+    </header>
+    <main id="home" class="flex flex-col items-center text-center px-4 sm:px-6 lg:px-8 mt-20 pb-16">
+        <h1 class="text-5xl font-extrabold leading-tight mb-2">
+            Astro
+            <span class="font-extrabold">Fact</span>
+        </h1>
+        <div class="w-16 h-1 bg-[#050517] rounded mx-auto mb-6"></div>
+        <p class="text-2xl font-normal mb-4">This System Exists Nowhere Else.</p>
+        <p class="max-w-xl text-gray-500 mb-10 text-center text-base sm:text-lg">
+            Revolutionary time-mapping methodology that transforms how businesses make strategic decisions through the ancient wisdom of temporal alignment.
+        </p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <button class="bg-[#050517] text-white rounded-md px-6 py-3 text-sm font-normal hover:bg-[#1a1a2e] transition">
+                <a href="#framework">Discover the System</a>
+            </button>
+            <button class="border border-gray-300 rounded-md px-6 py-3 text-sm font-normal hover:bg-gray-100 transition">
+                <a href="#join">Get Consultation</a>
+            </button>
+        </div>
+
+        <!-- 1st page-->
+        <main id="decode_time" class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 mt-32 mb-16">
+            <section class="max-w-xl mx-auto">
+                <h1 class="text-4xl font-normal mb-6 leading-tight text-center">Decode Time's Language</h1>
+                <p class="text-gray-600 mb-10 leading-relaxed text-center">
+                    Time has its own language — and when decoded, it reveals paths of growth, pause, and opportunity. At AstroFact, we use time-calculation frameworks to align your vision.
+                </p>
+                <ul class="space-y-6 text-black text-base font-normal max-w-md mx-auto">
+                    <li class="flex items-center gap-3">
+                        <span class="block w-4 h-4 rounded-full bg-black flex-shrink-0"></span>
+                        Ancient wisdom meets modern strategy
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="block w-4 h-4 rounded-full bg-black flex-shrink-0"></span>
+                        Precision timing for maximum impact
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="block w-4 h-4 rounded-full bg-black flex-shrink-0"></span>
+                        Growth cycles mapped to perfection
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+
+     
+        
+        <section id="framework" class="max-w-7xl mx-auto px-4 py-16 text-center">
+   <h1 class="text-4xl font-normal mb-6">
+    Strategic Framework
+   </h1>
+   <p class="max-w-3xl mx-auto text-gray-600 text-lg leading-relaxed mb-16">
+    We specialize in decoding time to align your business decisions with powerful growth periods. Using a structured framework based on time patterns, we help entrepreneurs, startups, and corporates navigate opportunities, avoid slow cycles, and make high-impact decisions at the right moment.
+   </p>
+   <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <div class="bg-white rounded-xl p-8 border border-gray-200">
+     <div class="bg-[#050517] w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-6">
+      <img alt="Orange lightning bolt icon on dark navy square background" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/b117fffc-b3b1-4c3a-9ba7-b60e51b63bde.jpg" width="32"/>
+     </div>
+     <h3 class="text-lg font-normal mb-2">
+      Growth Periods
+     </h3>
+     <p class="text-gray-500 text-sm leading-relaxed">
+      Identify and capitalize on powerful expansion windows
+     </p>
+    </div>
+    <div class="bg-white rounded-xl p-8 border border-gray-200">
+     <div class="bg-[#050517] w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-6">
+      <img alt="Target icon with arrow on dark navy square background" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/39bc0741-d7ff-4990-ba02-4c682eb44148.jpg" width="32"/>
+     </div>
+     <h3 class="text-lg font-normal mb-2">
+      Decision Timing
+     </h3>
+     <p class="text-gray-500 text-sm leading-relaxed">
+      Make high-impact decisions at precisely the right moment
+     </p>
+    </div>
+    <div class="bg-white rounded-xl p-8 border border-gray-200">
+     <div class="bg-[#050517] w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-6">
+      <img alt="Cycle navigation icon with arrows on dark navy square background" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/8821f8ed-f743-436d-6d8b-e40d58e4b2db.jpg" width="32"/>
+     </div>
+     <h3 class="text-lg font-normal mb-2">
+      Cycle Navigation
+     </h3>
+     <p class="text-gray-500 text-sm leading-relaxed">
+      Avoid slow periods and maximize productive phases
+     </p>
+    </div>
+   </div>
+</section>
+
+    </main>
+
+
+      <section id="rare_knowledge" class="max-w-7xl mx-auto px-4 py-16 text-center">
+
+         
+   <h1 class="text-4xl font-normal mb-6">
+    Rare Knowledge
+   </h1>
+   <p class="text-gray-600 text-lg leading-relaxed max-w-xl mx-auto mb-16">
+    We don't offer what's commonly found. Our work is rooted in rare knowledge,
+      time-mapped precision, and a framework that blends spiritual timing with
+      strategic execution. It's not for everyone — it's for those ready to move
+      with clarity, intention, and alignment.
+   </p>
+  <!-- <h2 class="text-2xl font-normal mb-4">
+    For those ready to move with intention
+   </h2>
+   <p class="text-gray-600 text-base max-w-md mx-auto mb-12">
+    This system exists nowhere else. Join the select few who understand that timing
+      isn't just important — it's everything. ✨
+   </p>
+   <button class="bg-[#050511] text-white rounded-md px-8 py-3 text-base font-normal hover:bg-gray-900 transition" type="button">
+    Are You Ready?
+   </button> -->
+   </section>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+<section id="contact" class="max-w-7xl mx-auto px-4 py-16 text-left">
+
+   <h1 class="text-center text-4xl font-normal mb-4">
+    Contact AstroFact
+   </h1>
+   <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">
+    Ready to discover how time-mapping can transform your business? Connect with our experts and unlock the power of temporal wisdom.
+   </p>
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    <a href="tel:+919227112025" class="border border-gray-300 rounded-lg p-6 flex space-x-4 items-start hover:bg-gray-50 transition" aria-label="Call +91 92271 12025">
+          <img alt="Phone icon with handset in blue on white background" class="flex-shrink-0" height="32" src="https://cdn-icons-png.flaticon.com/512/15/15928.png" width="32" />
+          <div>
+            <p class="font-semibold mb-1">Call</p>
+            <p class="mb-1">+91 92271 12025</p>
+            <p class="text-gray-500 text-sm">Connect with our time experts</p>
+          </div>
+        </a>
+        <a href="https://wa.me/919227112025" target="_blank" rel="noopener noreferrer" class="border border-gray-300 rounded-lg p-6 flex space-x-4 items-start hover:bg-gray-50 transition" aria-label="WhatsApp +91 92271 12025">
+          <img alt="WhatsApp icon green phone on light green background" class="flex-shrink-0" height="32" src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="32" />
+          <div>
+            <p class="font-semibold mb-1">WhatsApp</p>
+            <p class="mb-1">+91 92271 12025</p>
+            <p class="text-gray-500 text-sm">Direct line to our consultants</p>
+          </div>
+        </a>
+        <a href="mailto:astrofact.india@gmail.com" class="border border-gray-300 rounded-lg p-6 flex space-x-4 items-start hover:bg-gray-50 transition" aria-label="Email astrofact.india@gmail.com">
+          <img alt="Email icon with envelope and @ symbol in blue on white background" class="flex-shrink-0" height="32" src="https://cdn-icons-png.flaticon.com/512/561/561127.png" width="32" />
+          <div>
+            <p class="font-semibold mb-1">Email</p>
+            <p class="mb-1">astrofact.india@gmail.com</p>
+            <p class="text-gray-500 text-sm">Operating across all time zones</p>
+          </div>
+        </a>
+        <a href="https://goo.gl/maps/your-location" target="_blank" rel="noopener noreferrer" class="border border-gray-300 rounded-lg p-6 flex space-x-4 items-start hover:bg-gray-50 transition" aria-label="Location G-09 Rajshree City Centre, KshetrapaL Mandir Road, Surat, Gujarat, India">
+          <img alt="Location icon with map pin in red on white background" class="flex-shrink-0" height="32" src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="32" />
+          <div>
+            <p class="font-semibold mb-1">Location</p>
+            <p class="mb-1">G-09 Rajshree City Centre, KshetrapaL Mandir Road, Surat, Gujarat, India.</p>
+            <p class="text-gray-500 text-sm">Quick response guaranteed</p>
+          </div>
+        </a>
+   </div>
+  </main>
+
+  <main class="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <section id="join" class="max-w-7xl mx-auto px-4 py-16 text-center">
+      <h1 class="text-4xl font-normal mb-4">Join AstroFact</h1>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+        Be part of the revolution in time-mapping. We're looking for exceptional
+        individuals who share our vision of temporal wisdom and strategic
+        alignment.
+      </p>
+    </section>
+
+  <section
+      class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8"
+      aria-label="Application and information sections"
+    >
+<form id="joinForm" class="lg:col-span-2 bg-white rounded-xl p-8 space-y-6 shadow-sm"
+      aria-label="Application Form">
+  
+  <h2 class="text-2xl font-normal mb-6">Submit your Form </h2>
+
+  <div>
+    <label for="firstName" class="block text-sm font-normal mb-1 text-gray-900">
+      Full Name *
+    </label>
+    <input type="text" id="firstName" name="name" placeholder="John"
+      class="w-full rounded-md border border-gray-200 bg-gray-100 px-3 py-2 text-sm text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+      required />
+  </div>
+
+  <div>
+    <label for="phone" class="block text-sm font-normal mb-1 text-gray-900">
+      Phone Number *
+    </label>
+    <input type="tel" id="phone" name="phone" placeholder="9876543210"
+      class="w-full rounded-md border border-gray-200 bg-gray-100 px-3 py-2 text-sm text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+      pattern="^[0-9]{10}$"
+      title="Please enter exactly 10 digits"
+      required />
+  </div>
+
+  <div>
+    <label for="email" class="block text-sm font-normal mb-1 text-gray-900">
+      Email Address *
+    </label>
+    <input type="email" id="email" name="email" placeholder="john.doe@email.com"
+      class="w-full rounded-md border border-gray-200 bg-gray-100 px-3 py-2 text-sm text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+      required />
+  </div>
+
+  <div>
+    <label for="address" class="block text-sm font-normal mb-1 text-gray-900">
+      Address *
+    </label>
+    <input type="text" id="address" name="address" placeholder=""
+      class="w-full rounded-md border border-gray-200 bg-gray-100 px-3 py-2 text-sm text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+      required />
+  </div>
+
+  <button type="submit"
+    class="bg-[#0a0a1a] text-white rounded-md px-6 py-3 font-semibold hover:bg-[#12122b]">
+    Submit Application
+  </button>
+</form>
+
+<script>
+document.getElementById('joinForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Email validation
+    const email = document.getElementById('email').value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // Phone validation (exactly 10 digits)
+    const phone = document.getElementById('phone').value.trim();
+    const phonePattern = /^[0-9]{10}$/;
+    if (!phonePattern.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+    }
+
+    // Send data to Google Sheets
+    const formData = new FormData();
+    formData.append("name", document.getElementById('firstName').value);
+    formData.append("phone", phone);
+    formData.append("email", email);
+    formData.append("address", document.getElementById('address').value);
+
+    fetch("https://script.google.com/macros/s/AKfycbypB2XPoyZOa5IiZP-HXtSm2BbTjxxC_oCY6kjsPV_0GkXs4XpDlz1_BUhAdNU-zwrtHg/exec",{
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.status === "success") {
+            alert("Application submitted successfully!");
+            document.getElementById('joinForm').reset();
+        } else {
+            alert("Error: " + (data.message || JSON.stringify(data)));
+        }
+    })
+    .catch(err => {
+        console.error("Fetch error:", err);
+        alert("Network or fetch error: " + err);
+    });
+});
+</script>
+
+
+
+      <aside class="space-y-8">
+        <div
+          class="bg-white rounded-xl p-6 shadow-sm"
+          aria-label="Why Join AstroFact"
+        >
+          <h3 class="text-lg font-normal mb-4">Why Join AstroFact?</h3>
+          <ul class="space-y-2 text-sm text-gray-900">
+            <li class="flex items-center gap-2">
+              <span>✨</span> Pioneer revolutionary methodologies
+            </li>
+            <li class="flex items-center gap-2">
+              <span>🌍</span> Work with global clients
+            </li>
+            <li class="flex items-center gap-2">
+              <span>💡</span> Continuous learning opportunities
+            </li>
+            <li class="flex items-center gap-2">
+              <span>🚀</span> Competitive compensation
+            </li>
+            <li class="flex items-center gap-2">
+              <span>⚖️</span> Flexible work arrangements
+            </li>
+          </ul>
+        </div>
+         <div
+          class="bg-white rounded-xl p-6 shadow-sm"
+          aria-label="Application Process"
+        >
+        <h2 class="text-2xl font-normal mb-4">
+    For those ready to move with intention
+   </h2>
+   <p class="text-gray-600 text-base max-w-md mx-auto mb-12">
+    This system exists nowhere else. Join the select few who understand that timing
+      isn't just important — it's everything. ✨
+   </p>
+   <button class="bg-[#050511] text-white rounded-md px-8 py-3 text-base font-normal hover:bg-gray-900 transition" type="button">
+    Are You Ready?
+   </button>
+         </div>
+      </aside>
+    </section>
+  </main>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+         const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('main[id], section[id]');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('bg-[#050517]', 'text-white');
+                link.classList.add('text-black');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('bg-[#050517]', 'text-white');
+                    link.classList.remove('text-black');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

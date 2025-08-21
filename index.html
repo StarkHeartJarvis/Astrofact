@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <!--<meta content="width=device-width, initial-scale=1" name="viewport"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>AstroFact</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
@@ -22,19 +24,24 @@
         }
 
         
+
+        
     </style>
 </head>
 <body class="bg-white text-black font-sans">
       <header class="border-b border-gray-200 sticky top-0 z-50 bg-white/80 backdrop-blur-md transition-all shadow-sm">
 
         <nav id="navbar" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-center sm:justify-center py-6 relative space-x-8">
+            <!--<div class="flex items-center justify-center sm:justify-center py-6 relative space-x-8">-->
+              <div class="flex items-center justify-between py-6 relative">
+
                 <!-- alt="Company logo, simple black and white icon" class="absolute left-4 top-1/2 -translate-y-1/2 sm:static sm:translate-y-0" height="40" src="https://storage.googleapis.com/a1aa/image/a5c819cb-8cdd-4076-c9e9-d9b79d97dcd6.jpg" width="40"/> 
         
                 <img alt="Company logo" class="absolute left-4 top-12 -translate-y-1/2 sm:static sm:translate-y-0" height="40" src="astrofact_logo-removebg-preview.png" width="40"/>
             -->
-                 <img alt="Company logo" class="absolute left-4 top-12 -translate-y-1/2 sm:static sm:translate-y-0" height="190" src="astrofact_logo-removebg-preview.png" width="190"/>
-                <div class="hidden sm:flex space-x-8">
+                <img alt="Company logo" class="h-20 w-auto sm:h-24" src="astrofact_logo-removebg-preview.png"/>
+
+                 <div class="hidden sm:flex space-x-8">
                 <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#home">Home</a>
                 <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#decode_time">Decode Time</a>
                 <a class="text-sm font-normal text-black whitespace-nowrap nav-link rounded-md px-4 py-2" href="#framework">Framework</a>
@@ -375,6 +382,51 @@ document.getElementById('joinForm').addEventListener('submit', function (e) {
       </aside>
     </section>
   </main>
+
+   <footer class="bg-[#050517] text-gray-300 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-4">AstroFact</h3>
+        <p class="text-sm leading-relaxed">
+          Revolutionary time-mapping methodology that transforms how businesses make strategic decisions through the ancient wisdom of temporal alignment.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#home" class="hover:text-white">Home</a></li>
+          <li><a href="#decode_time" class="hover:text-white">Decode Time</a></li>
+          <li><a href="#framework" class="hover:text-white">Framework</a></li>
+          <li><a href="#rare_knowledge" class="hover:text-white">Rare Knowledge</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact</a></li>
+          <li><a href="#join" class="hover:text-white">Join Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+        <p class="text-sm mb-2">Phone: <a href="tel:+919227112025" class="hover:text-white">+91 92271 12025</a></p>
+        <p class="text-sm mb-2">Email: <a href="mailto:astrofact.india@gmail.com" class="hover:text-white">astrofact.india@gmail.com</a></p>
+        <p class="text-sm">Address: G-09 Rajshree City Centre, KshetrapaL Mandir Road, Surat, Gujarat, India.</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="https://www.facebook.com/astrofact" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-white">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2c0-2 1-3 3-3h2v3h-2c-.5 0-1 .5-1 1v2h3l-1 3h-2v7A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="https://twitter.com/astrofact" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="hover:text-white">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14.86 4.48 4.48 0 001.98-2.48 9.14 9.14 0 01-2.88 1.1 4.52 4.52 0 00-7.7 4.13A12.8 12.8 0 013 4.15a4.52 4.52 0 001.4 6.04 4.48 4.48 0 01-2.05-.57v.06a4.52 4.52 0 003.63 4.43 4.52 4.52 0 01-2.04.08 4.52 4.52 0 004.22 3.14A9 9 0 013 19.54a12.7 12.7 0 006.92 2"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/astrofact" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-white">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M4 3a2 2 0 11.001 3.999A2 2 0 014 3zm.5 4.5h-3v13h3v-13zm7 0h-3v13h3v-7c0-1.657 1.343-3 3-3s3 1.343 3 3v7h3v-8c0-3.309-2.691-6-6-6z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/astrofact" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-white">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 3a1 1 0 110 2 1 1 0 010-2zm-5 2a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-6 text-center text-xs text-gray-500">
+      &copy; 2024 AstroFact. All rights reserved.
+    </div>
+  </footer>
 
     <script>
         const btn = document.getElementById('menu-btn');
